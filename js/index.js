@@ -70,6 +70,10 @@ ctaImg.src = siteContent.cta['img-src'];
 const ctaHeader = document.querySelector('.cta-text h1');
 ctaHeader.textContent = siteContent.cta.h1;
 
+//break in h1 text
+const mainHeader = document.getElementsByTagName("h1")[0];
+mainHeader.innerHTML = siteContent["cta"]["h1"].split(" ").join("<br>");
+
 //CTA Button
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent.cta.button;
@@ -111,6 +115,10 @@ bottomContentp[2].textContent = siteContent['main-content']['vision-content'];
 //contact h4
 const contacth4 = document.querySelector('.contact h4');
 contacth4.textContent = siteContent.contact['contact-h4'];
+
+//break in h4 text
+// const contactHeader = document.getElementsByTagName('contact-h4')[0];
+// contactHeader.innerHTML = siteContent['contact']['contact-h4'].split(' ').join('<br>');
 
 //contact paragraph [0]
 const contactp = document.querySelectorAll('.contact p');
